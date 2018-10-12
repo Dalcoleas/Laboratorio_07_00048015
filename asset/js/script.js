@@ -14,10 +14,28 @@ container.style.height = "200px";
 
 container.innerHTML = "<input type=”text” placeholder=’escriba su texto’>";
 
+
 var containers;
 
-/*------------------------------------*/
+containers = document.getElementsByClassName("c2");
 
+Array.prototype.forEach.call(containers, element => {
+    element.style.backgroundColor = "#009999";
+    element.innerHTML = "<input type='text' placeholder='escriba su texto'>";
 
-container = document.getElementsByClassName("c2");
+});
 
+var boton = document.getElementById("btn-click");
+
+boton.onclick = function(evt) 
+{ 
+alert("Hola mundo"); 
+}
+
+var btnCopy = document.getElementById("btnCopy");
+
+btnCopy.onclick = function(evt) 
+{ 
+let msj = document.getElementById('textMsj').value;
+document.getElementById('showMsj').innerText = msj;
+}
