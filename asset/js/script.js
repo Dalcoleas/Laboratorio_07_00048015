@@ -14,6 +14,7 @@ container.style.height = "200px";
 
 container.innerHTML = "<input type=”text” placeholder=’escriba su texto’>";
 
+/*----------------------------*/
 
 var containers;
 
@@ -24,6 +25,9 @@ Array.prototype.forEach.call(containers, element => {
     element.innerHTML = "<input type='text' placeholder='escriba su texto'>";
 
 });
+
+/*----------------------------*/
+
 
 var boton = document.getElementById("btn-click");
 
